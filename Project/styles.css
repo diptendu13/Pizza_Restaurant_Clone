@@ -1,0 +1,390 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
+}
+
+/* Header Section */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    background-color: black;
+}
+.header .restaurant-name, .header .navigation-menu, .header .social-icons{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 15px;
+    
+}
+
+.restaurant-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.navigation-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    width: 60%;
+    height: inherit;
+}
+
+.navigation-menu .nav-items a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    width: 12%;
+    height: inherit;
+}
+
+.social-icons .svg-inline--fa{
+    height: 18px;
+}
+
+/* Main Section */
+
+.main-container{
+    position: relative;
+    top: 65px;
+}
+
+.main-content{
+    width: 100%;
+    height: 692px;
+}
+
+.main-banner-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-image: url("./Images/pizza1\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 45px 100px;
+}
+
+.main-content-heading{
+    height: 40%;
+    width: 62%;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-heading h1{
+    font-family: 'Quattrocento', serif;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.main-banner-wrapper .partition{
+    width: 38%;
+    height: 2%;
+    background-color: #F24C4C;
+    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.25);
+}
+.main-content-desc{
+    width: 45%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.main-content-desc p{
+    width: 85%;
+    height: 85%;
+    font-size: 23px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.main-content-heading, .partition, .main-content-desc{
+    margin: 0px 20px;
+}
+
+/* About Us Section */
+
+.about-us{
+    height: 692px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px;
+}
+
+.about-us-container .about-us-heading{
+    width: 200%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.about-us-container .about-us-underline{
+    width: 200%;
+    height: 6px;
+    background-color: #B62828;
+}
+
+.about-us-heading h1{
+    font-family: 'Quattrocento', serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: black;
+    width: fit-content;
+}
+
+.about-us-content{
+    display: flex;
+    justify-content: center;
+    height: 70%;
+}
+.about-us-image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-desc{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 25px;
+}
+.about-us-desc .about-us-overline{
+    width: 60%;
+    height: 3px;
+    background-color: #F24C4C;
+}
+
+
+.about-us-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-para{
+    padding-right: 20px;
+}
+
+.about-us-para p{
+    width: 75%;
+    font-size: 20px;
+    line-height: 30px;
+    
+    color: #FFFFFF;
+}
+
+
+/* Menu Section */
+
+.menu{
+    height: 975px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px;
+    row-gap: 10px;
+}
+
+.menu-container .menu-underline{
+    width: 30%;
+    height: 6px;
+    background-color: #B62828;
+    margin-bottom: 45px;
+}
+
+.menu-container .menu-desc{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container .menu-desc p{
+    color:#FFFFFF;
+    width: 72%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.menu-heading h1{
+    font-family: 'Quattrocento', serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: black;
+    width: fit-content;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    background-color: black;
+    justify-content: center;
+    row-gap: 50px;
+    margin-top: 30px;
+}
+
+.item-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.item-cards .item-card-image, .item-cards .item-card-desc{
+    width: 40%;
+    padding: 10px;
+}
+
+.item-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-card-desc h1{
+    color: #F2C94C;
+}
+
+.item-card-desc p{
+    color: #FFFFFF;
+}
+
+/* Find Us Section */
+
+.find-us{
+    height: 692px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-us-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px;
+    row-gap: 10px;
+}
+
+.find-us-container .find-us-underline{
+    width: 180%;
+    height: 6px;
+    background-color: #B62828;
+    margin-bottom: 45px;
+}
+
+.find-us-heading h1{
+    font-family: 'Quattrocento', serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: black;
+    width: fit-content;
+}
+
+.find-us-contents{
+    display: flex;
+    justify-content: center;
+    height: 45%;
+    column-gap: 8px;
+}
+
+.find-us-contents .find-us-map{
+    width: 40%;
+}
+
+.find-us-contents .find-us-desc{
+    width: 40%;
+}
+
+.find-us-para p{
+    width: 84%;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.find-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: black;
+    color: #FFFFFF;
+    justify-content: center;
+    row-gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.fa-location-pin{
+    color: dimgrey;
+}
+
+.find-us-grid-items .svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 35px;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.find-us-grid-items img{
+    width: 34px;
+}
+
+#loc{
+    position: relative;
+}
+
+#loc img{
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 18px;
+}
