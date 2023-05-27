@@ -6,6 +6,11 @@
     font-family: 'Ruda', sans-serif;
 }
 
+/* For Smooth Scrolling */
+html{
+    scroll-behavior: smooth;
+}
+
 /* Header Section */
 .header{
     display: flex;
@@ -288,10 +293,16 @@
 
 .item-card-desc h1{
     color: #F2C94C;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
 }
 
 .item-card-desc p{
     color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 /* Find Us Section */
@@ -314,7 +325,7 @@
 }
 
 .find-us-container .find-us-underline{
-    width: 180%;
+    width: 200%;
     height: 6px;
     background-color: #B62828;
     margin-bottom: 45px;
@@ -336,11 +347,7 @@
     column-gap: 8px;
 }
 
-.find-us-contents .find-us-map{
-    width: 40%;
-}
-
-.find-us-contents .find-us-desc{
+.find-us-contents .find-us-map, .find-us-contents .find-us-desc{
     width: 40%;
 }
 
@@ -387,4 +394,94 @@
     top: 5px;
     left: 4px;
     width: 18px;
+}
+
+.find-us-grid-items ul li{
+    list-style: none;
+    line-height: 25px;
+}
+
+/* Footer Section */
+.footer{
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.footer .footer-icon{
+    width: 70%;
+    height: 60%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-grid {
+    width: 20%;
+    height: 60%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-content: center;
+    justify-items: center;
+    row-gap: 15px;
+}
+
+.footer-icon .footer-icon-wrapper{
+    width: 70%;
+    height: 65%;
+    position: relative;
+}
+
+.footer-icon-wrapper #cap-icon{
+    position: absolute;
+    left: 14px;
+}
+
+.footer-icon-wrapper #face-icon{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+}
+
+.footer-icon-wrapper #body-icon{
+    position: absolute;
+    top:36px;
+}
+
+.footer-icon-wrapper #hand-icon{
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+.footer-icon-wrapper #plate-icon{
+    position: absolute;
+    top: 15px;
+    left: 90px;
+}
+
+.footer-grid-items .svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 35px;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.fa-envelope{
+    color: #FFFFFF;
+}
+
+#phn img{
+    width: 35px;
+}
+
+.footer-grid-items p{
+    color: #FFFFFF;
+}
+.footer-grid-items ul li{
+    list-style: none;
+    color: #FFFFFF;
 }
